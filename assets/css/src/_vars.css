@@ -8,8 +8,7 @@
 @custom-media --breakpoint-lg-h (min-width: 64em) and (min-height: 38em);
 
 :root {
-
-  --font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  --font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   --line-height: 1.5;
   --heading-font-family: 'Helvetica Neue', Helvetica, sans-serif;
   --heading-font-weight: 700;
@@ -51,10 +50,10 @@
   --border-radius: 3px;
   --border-color: var(--darken-2);
 
-  --body-color: #222;
+  --body-color: #232931;
 
-  --link-color: #B30A0A;
-  --link-hover-text-decoration: none;
+  --link-color: #4ecca3;
+  --link-hover-text-decoration: underline;
 
   --heading-margin-bottom: 1rem;
 
@@ -65,11 +64,9 @@
   --button-background-color: var(--link-color);
 
   /* Colors */
+  --light-white: #eee;
   --blue: #1A5D88;
-  --gray: #999;
-  --teal: #18B5B5;
-  --blue-light: #f2f4f5;
-  --blue-maroon: #6c719e;
-  --yellow-light: #f5f4f2;
+  --gray: #393e46;
+  --yellow-light: #eeeeee;
 
 }

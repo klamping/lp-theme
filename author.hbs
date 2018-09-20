@@ -6,26 +6,26 @@
 {{! Everything inside the #author tags pulls data from the author }}
 {{#author}}
 
-    <section class="author-profile clearfix">
+    <section class="author-profile">
         {{#if profile_image}}
-        <div class="author-image right ml3 mb3">
+        <div class="author-image">
             <img class="img circle border" src="{{img_url profile_image}}" alt="{{name}}'s Picture">
         </div>
         {{/if}}
-        <h1 class="author-title mt0">{{name}}</h1>
-        <div class="author-meta mb2 h3 gray light">
-            {{#if location}}<span class="author-location mr2">{{location}}</span>{{/if}}
-            {{#if website}}<span class="author-link mr2"><a href="{{website}}">{{website}}</a></span>{{/if}}
+        <h1 class="author-title">{{name}}</h1>
+        <div class="author-meta">
+            {{#if location}}<span class="author-location">{{location}}</span>{{/if}}
+            {{#if website}}<span class="author-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
             <span class="author-stats">{{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
         </div>
         {{#if bio}}
-            <p class="author-bio h4 mb3 light">{{bio}}</p>
+            <p class="author-bio">{{bio}}</p>
         {{/if}}
     </section>
 {{/author}}
 
 {{! The main content area on the homepage }}
-<main class="content mxn2 js-grid">
+<main class="content">
 
     {{! The tag below includes the post loop - partials/loop.hbs }}
     {{> "loop"}}

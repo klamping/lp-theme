@@ -5,8 +5,8 @@
 <header class="main-header tag-head {{#if tag.feature_image}}" style="background-image: url({{tag.feature_image}}){{/if}}">
     <div class="vertical">
         <div class="main-header-content inner">
-            <h1 class="page-title mt0">{{tag.name}}</h1>
-            <h2 class="page-description h3 light gray">
+            <h1 class="page-title">{{tag.name}}</h1>
+            <h2 class="page-description">
                 {{#if tag.description}}
                     {{tag.description}}
                 {{else}}
@@ -18,7 +18,7 @@
 </header>
 
 {{! The main content area on the homepage }}
-<main class="content mxn2 js-grid">
+<main class="content">
 
     {{! The tag below includes the post loop - partials/loop.hbs }}
     {{> "loop"}}

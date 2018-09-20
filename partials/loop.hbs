@@ -1,18 +1,18 @@
 {{! This is the post loop - each post will be output using this markup }}
-{{#foreach posts}}
-<article class="{{post_class}} px2 border-box post--grid {{#if featured}}post--featured{{/if}}">
-    <div class="p3 bg-white box-shadow">
+<div class="posts">
+    {{#foreach posts}}
+    <article class="{{post_class}} {{#if featured}}post--featured{{/if}}">
         {{#if feature_image}}
-        <div class="post-image mxn3 mb3">
-            <a href="{{url}}"><img src="{{img_url feature_image}}" alt=""></a>
-        </div>
+        <span class="post-image" style="background-image:url({{img_url feature_image}})"></span>
         {{/if}}
-        <header class="post-header">
-            <h2 class="post-title mt0 break-word"><a class="black" href="{{url}}">{{{title}}}</a></h2>
-        </header>
-        <div class="post-excerpt h5 light">
-            <p class="mb0">{{excerpt}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+        <div class="post-content">
+            <header class="post-header">
+                <h2 class="post-title"><a class="black" href="{{url}}">{{{title}}}</a></h2>
+            </header>
+            <div class="post-excerpt">
+                <p class="mb0">{{excerpt}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+            </div>
         </div>
-    </div>
-</article>
-{{/foreach}}
+    </article>
+    {{/foreach}}
+</div>
