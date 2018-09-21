@@ -52,8 +52,11 @@
 
   --body-color: #232931;
 
-  --link-color: #4ecca3;
+  --link-color: #2FAD84;
+  --link-hover: #76DFBD;
   --link-hover-text-decoration: underline;
+
+  --selection-color: #7DADDE;
 
   --heading-margin-bottom: 1rem;
 
@@ -68,5 +71,6 @@
   --blue: #1A5D88;
   --gray: #393e46;
   --yellow-light: #eeeeee;
+  --black: #333;
 
 }
