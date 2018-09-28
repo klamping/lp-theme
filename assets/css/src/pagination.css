@@ -1,0 +1,34 @@
+.pagination {
+  display: flex;
+  max-width: 60rem;
+  margin: 0 1rem;
+  font-size: 1.3rem;
+}
+.pagination a {
+  flex: 1;
+  padding: 1rem;
+  color: #eee;
+  background: linear-gradient(45deg,#141b27,#393e46);
+}
+.pagination a + a {
+  margin-left: 1rem;
+}
+.pagination .older-posts {
+  text-align: right;
+  background: linear-gradient(-45deg,#141b27,#393e46);
+}
+@media (--breakpoint-sm) {
+  .pagination {
+    font-size: 1.8rem;
+  }
+}
+@media (--breakpoint-lg) {
+  .pagination {
+    margin: 0 2rem;
+  }
+}
+@media (--breakpoint-xl) {
+  .pagination {
+    font-size: 2rem;
+  }
+}

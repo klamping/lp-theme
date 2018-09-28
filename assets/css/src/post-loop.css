@@ -38,7 +38,7 @@
 
 @media (--breakpoint-xs) {
   .posts {
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 0;
   }
   .post-excerpt {
     font-size: 1.2rem;
@@ -76,7 +76,7 @@
 }
 @media (--breakpoint-lg) {
   .posts {
-    padding: 2.2rem 2rem;
+    padding: 2.2rem 2rem 0;
   }
 }
 @media (--breakpoint-xl) {
@@ -85,6 +85,19 @@
   }
   .posts .post {
     max-width: 60rem;
+    min-height: 40rem;
+  }
+  .posts .post-title {
+    font-size: 2.4rem;
+    margin-top: .7rem;
+    margin-bottom: 1.2rem;
+  }
+  .post-excerpt {
+    font-size: 1.3rem;
+  }
+  .posts .read-more {
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
   }
 }
 

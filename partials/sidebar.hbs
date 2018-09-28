@@ -1,26 +1,22 @@
 <div class="sidebar">
-
-    <div class="sidebar-inner">
-
-        {{! The big featured header }}
-        <header class="main-header">
-            {{#if @blog.logo}}
-                <a class="blog-logo mt0 hop5" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
+    <header>
+        {{#if @blog.logo}}
+            <a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
+        {{else}}
+            {{#is "home"}}
+                <h1 class="site-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
             {{else}}
-                {{#is "home"}}
-                    <h1 class="page-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
-                {{else}}
-                    <h2 class="page-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h2>
-                {{/is}}
-            {{/if}}
-            <h2 class="page-description">{{@blog.description}}</h2>
-        </header>
+                <h2 class="site-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h2>
+            {{/is}}
+        {{/if}}
+        <h2 class="page-description">{{@blog.description}}</h2>
+    </header>
+
+    <div class="site-meta">
         {{navigation}}
 
         <a href="https://learn.webdriver.io?coupon=kevin" class="course-promo">
             <img src="{{asset 'images/course.jpg'}}"alt="Learn WebdriverIO - Bite-size video lessons built to get you writing tests fast" />
         </a>
-
     </div>
-
 </div>
