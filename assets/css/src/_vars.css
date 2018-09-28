@@ -1,16 +1,16 @@
 /* Media queries */
-@custom-media --breakpoint-xs (min-width: 30em);
-@custom-media --breakpoint-sm (min-width: 40em);
+@custom-media --breakpoint-xs (min-width: 23em);
+@custom-media --breakpoint-sm (min-width: 40em); /* ipad portrait */
 @custom-media --breakpoint-md (min-width: 52em);
-@custom-media --breakpoint-lg (min-width: 64em);
-@custom-media --breakpoint-xl (min-width: 72em);
-@custom-media --breakpoint-xxl (min-width: 120em);
+@custom-media --breakpoint-lg (min-width: 64em); /* ipad landscape */
+@custom-media --breakpoint-xl (min-width: 82em);
+@custom-media --breakpoint-xxl (min-width: 96em);
 @custom-media --breakpoint-lg-h (min-width: 64em) and (min-height: 38em);
 
 :root {
-  --font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-family: 'Roboto', sans-serif;
   --line-height: 1.5;
-  --heading-font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  --heading-font-family: 'Rubik', sans-serif;
   --heading-font-weight: 700;
   --heading-line-height: 1.25;
   --monospace-font-family: monospace;

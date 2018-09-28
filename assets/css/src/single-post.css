@@ -1,0 +1,134 @@
+.single-post {
+  position: relative;
+}
+.single-post h1,
+.single-post h2,
+.single-post h3,
+.single-post h4,
+.single-post h5,
+.single-post h6 {
+  margin: 2rem 0 0;
+}
+.single-post .post {
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+}
+.post-full-image {
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+.single-post .post-title {
+  font-size: 2rem;
+  margin: .5rem 0;
+}
+.single-post .post-meta {
+  display: block;
+}
+@media (--breakpoint-xs) {
+  .single-post .post-title {
+    font-size: 2.4rem;
+  }
+  .single-post .post-content {
+    font-size: 1.3rem;
+  }
+}
+@media (--breakpoint-sm) {
+  .single-post .post-title {
+    font-size: 3rem;
+  }
+  .single-post .post-meta {
+    font-size: 1.2rem;
+  }
+  .single-post .post-content {
+    font-size: 1.4rem;
+  }
+}
+@media (--breakpoint-md) {
+  .single-post .post-title {
+    font-size: 2.2rem;
+  }
+  .single-post .post-content {
+    font-size: 1.2rem;
+  }
+}
+@media (--breakpoint-xl) {
+  .post-full-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .has-feature-image {
+    padding-top: 45vh;
+  }
+  .single-post .post-meta {
+    font-size: 1.1rem;
+  }
+  .single-post .post {
+    margin-left: 2rem;
+    max-width: 55rem;
+    padding: 1.5rem 2rem;
+  }
+}
+@media (--breakpoint-xxl) {
+  .single-post .post {
+    margin-left: 4rem;
+    padding: 2rem 4rem;
+    max-width: 60rem;
+  }
+  .single-post .post-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .single-post .post-content {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
+}
+
+.subscribe {
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.0625);
+}
+.subscribe .form-group {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.subscribe .subscribe-email {
+  width: 100%;
+}
+@media (--breakpoint-sm) {
+  .subscribe .form-group {
+    margin-bottom: 0;
+    width: 70%;
+    float: left;
+  }
+  .subscribe .subscribe-email {
+    border-radius: 4px 0 0 4px;
+  }
+  .subscribe form button {
+    width: 30%;
+    float: left;
+    border-radius: 0 4px 4px 0;
+  }
+}
+
+.read-next {
+  max-width: 48rem;
+}
+.read-next-story a {
+  color: var(--gray);
+  background: transparent url('../../images/chevron-right.svg') 100% 50% no-repeat;
+  background-size: 32px;
+  min-height: 32px;
+}
+.read-next-story.prev a {
+  background: transparent url('../../images/chevron-left.svg') 0 50% no-repeat;
+  background-size: 32px;
+}
+.read-next-story a:hover {
+  color: var(--black);
+}
