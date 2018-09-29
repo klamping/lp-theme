@@ -408,11 +408,7 @@ html {
 }
 body {
   position: relative;
-}
-@media (min-width: 82em) {
-  body {
-    background-color: #eee;
-  }
+  background-color: #eee;
 }
 
 ::-moz-selection { background: #7DADDE; }

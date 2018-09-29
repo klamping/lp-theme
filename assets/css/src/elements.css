@@ -9,11 +9,7 @@ html {
 }
 body {
   position: relative;
-}
-@media (--breakpoint-xl) {
-  body {
-    background-color: #eee;
-  }
+  background-color: #eee;
 }
 
 ::-moz-selection { background: var(--selection-color); }
