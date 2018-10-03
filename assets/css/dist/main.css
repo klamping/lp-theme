@@ -861,6 +861,9 @@ input[type=button], input[type=submit], input[type=reset], button {
   background: #fff;
   position: relative;
 }
+.single-post .post img {
+  max-width: 100%;
+}
 .post-full-image {
   height: 35vh;
   width: 100%;
