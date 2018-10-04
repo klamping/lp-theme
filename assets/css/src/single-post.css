@@ -29,9 +29,24 @@
   margin: .5rem 0;
 }
 .single-post .post-meta {
-  display: block;
+  display: flex;
+  align-content: space-between;
+  align-items: center;
   border-bottom: 1px dotted #ddd;
   padding-bottom: .5rem;
+}
+.pocket-btn {
+  height: 20px;
+  width: 60px;
+  margin-left: .5rem;
+  padding-left: .5rem;
+  border-left: 1px solid #ddd;
+  background: url(../../images/pocket_button.png) top right no-repeat;
+  background-size: 60px;
+}
+.pocket-btn:hover,
+.pocket-btn:focus {
+  background-position: 100% -20px;
 }
 @media (--breakpoint-xs) {
   .single-post .post-title {

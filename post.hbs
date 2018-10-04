@@ -20,6 +20,7 @@
             <h1 class="post-title">{{title}}</h1>
             <div class="post-meta">
               <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="Do MMM YYYY"}} {{tags prefix=" on "}}</time>
+              <a href="https://getpocket.com/save?url={{url absolute="true"}}" class="pocket-btn" target="_blank" onclick="_paq.push(['trackEvent', 'Social', 'Click', 'Pocket']);"><span class="screen-reader-text">Save to Pocket</span></a>
             </div>
 
         </header>
@@ -33,12 +34,12 @@
             <div class="share">
                 <h4 class="h5 caps">Share this post</h4>
                 <a href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');_paq.push(['trackEvent', 'Social', 'Click', 'Twitter']);return false;">
                     <img class="align-middle" src="{{asset 'images/twitter.svg'}}" alt="Twitter icon">
                     <span class="hide">Twitter</span>
                 </a>
                 <a href="http://www.reddit.com/submit?url={{url absolute="true"}}&title={{encode title}}"
-                    onclick="window.open(this.href, 'reddit-share', 'width=550,height=235');return false;">
+                    onclick="window.open(this.href, 'reddit-share', 'width=550,height=235');_paq.push(['trackEvent', 'Social', 'Click', 'Reddit']);return false;">
                     <img class="align-middle" src="{{asset 'images/reddit.svg'}}" alt="Reddit icon">
                     <span class="hide">Reddit</span>
                 </a>

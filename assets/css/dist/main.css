@@ -533,6 +533,38 @@ input[type=button], input[type=submit], input[type=reset], button {
     padding: 2rem 1.5rem 1rem;
   }
 }
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
+}
 .sidebar {
   text-align: center;
   background: #393e46;
@@ -876,9 +908,26 @@ input[type=button], input[type=submit], input[type=reset], button {
   margin: .5rem 0;
 }
 .single-post .post-meta {
-  display: block;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
   border-bottom: 1px dotted #ddd;
   padding-bottom: .5rem;
+}
+.pocket-btn {
+  height: 20px;
+  width: 60px;
+  margin-left: .5rem;
+  padding-left: .5rem;
+  border-left: 1px solid #ddd;
+  background: url(../../images/pocket_button.png) top right no-repeat;
+  background-size: 60px;
+}
+.pocket-btn:hover, .pocket-btn:focus {
+  background-position: 100% -20px;
 }
 @media (min-width: 23em) {
   .single-post .post-title {
@@ -1023,38 +1072,6 @@ input[type=button], input[type=submit], input[type=reset], button {
   .pagination {
     font-size: 2rem;
   }
-}
-
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-/* Text meant only for screen readers. */
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
-.screen-reader-text:focus {
-  background-color: #f1f1f1;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  clip: auto !important;
-  color: #21759b;
-  display: block;
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: bold;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000; /* Above WP toolbar. */
 }
 
 /*--------------------------------------------------------------
