@@ -410,8 +410,6 @@ body {
   position: relative;
   background-color: #eee;
 }
-
-::-moz-selection { background: #7DADDE; }
 ::selection { background: #7DADDE; }
 
 a {
@@ -731,6 +729,7 @@ input[type=button], input[type=submit], input[type=reset], button {
     margin-top: 1.5em;
     border: 1px solid #445;
     border-radius: 2px;
+    background: #343440;
   }
   .sidebar .course-promo:hover, .sidebar .course-promo:focus {
     border-color: #2fad84;
@@ -854,8 +853,6 @@ input[type=button], input[type=submit], input[type=reset], button {
     margin-bottom: .5rem;
   }
 }
-
-.posts .post ::-moz-selection { background: #3870AA; }
 .posts .post ::selection { background: #3870AA; }
 
 .posts a {

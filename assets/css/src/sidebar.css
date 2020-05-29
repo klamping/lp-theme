@@ -158,6 +158,7 @@
     margin-top: 1.5em;
     border: 1px solid #445;
     border-radius: 2px;
+    background: #343440;
   }
   .sidebar .course-promo:hover,
   .sidebar .course-promo:focus {
