@@ -15,8 +15,12 @@
     <div class="site-meta">
         {{navigation}}
 
-        <a href="https://learn.webdriver.io?coupon=kevin" class="course-promo" onclick="_paq.push(['trackEvent', 'Course', 'Click', 'Sidebar']);">
+        {{!-- <a href="https://learn.webdriver.io?coupon=kevin" class="course-promo" onclick="_paq.push(['trackEvent', 'Course', 'Click', 'Sidebar']);">
             <img src="{{asset 'images/course.jpg'}}"alt="Learn WebdriverIO - Bite-size video lessons built to get you writing tests fast" />
+        </a> --}}
+
+        <a href="https://leanpub.com/webapp-testing-guidebook" class="course-promo" onclick="_paq.push(['trackEvent', 'Book', 'Click', 'Sidebar']);">
+            <img src="{{asset 'images/book.png'}}" alt="The Web App Testing Guidebook - UI Testing of Real World Websites Using WebdriverIO" />
         </a>
     </div>
 </div>
