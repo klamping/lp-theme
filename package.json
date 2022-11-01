@@ -24,7 +24,7 @@
     "basscss": "^7.0.4",
     "basscss-btn-sizes": "^1.1.0",
     "basscss-responsive-white-space": "^0.1.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^2.0.0",
     "gulp-livereload": "^3.8.1",
